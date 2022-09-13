@@ -1,10 +1,7 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.List;
 
 public class FinderTxtFiles {
 
@@ -27,11 +24,13 @@ public class FinderTxtFiles {
     }
 
     public static void fillAllTextInFile(String fileName) {
-        try (FileWriter writer = new FileWriter(fileName)) {
+        try (FileWriter writer = new FileWriter(fileName, StandardCharsets.UTF_8)) {
             for (Path path : CustomFileVizitor.getPathSet()) {
-                List<String> list = Files.readAllLines(path, StandardCharsets.UTF_8);
-                for (String str : list) {
-                    writer.write(str + "\n");
+                try (Reader reader = new FileReader(path.toFile(), StandardCharsets.UTF_8)) {
+                    reader.transferTo(writer);
+                    writer.write("\n");
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
             }
         } catch (IOException e) {
