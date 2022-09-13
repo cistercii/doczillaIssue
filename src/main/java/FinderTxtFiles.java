@@ -8,11 +8,15 @@ import java.util.List;
 
 public class FinderTxtFiles {
 
-    public void run() throws IOException {
+    public void run() {
         String separator = System.getProperty("file.separator");
         String rootFolder = "src" + separator + "main";
         String rootResourceFolder = rootFolder + separator + "resources";
-        runFindAllTxtFiles(rootResourceFolder);
+        try {
+            runFindAllTxtFiles(rootResourceFolder);
+        } catch (IOException e) {
+            System.err.println("Нет каталога Resource");
+        }
         fillAllTextInFile(rootFolder + separator + "result.txt");
     }
 
