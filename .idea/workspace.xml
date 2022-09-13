@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ff24b081-dfdb-4758-9a72-b1b239a80c9e" name="Changes" comment="Вынес поисковик в отдельный класс и добавил вывод результата конкатенации содержимого файлов в результирующий файл">
-      <change beforePath="$PROJECT_DIR$/src/main/java/CustomFileVizitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CustomFileVizitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FinderTxtFiles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FinderTxtFiles.java" afterDir="false" />
+    <list default="true" id="ff24b081-dfdb-4758-9a72-b1b239a80c9e" name="Changes" comment="Добавил обработку исключения, связанного с отсутствием папки с ресурсами">
+      <change afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
   <component name="RunManager">
@@ -83,7 +84,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663015763555</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Добавил кодировку и сменил коллекцию внутри визитора на абстрактную">
+      <created>1663016524031</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663016524031</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Добавил обработку исключения, связанного с отсутствием папки с ресурсами">
+      <created>1663049564577</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663049564577</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +116,8 @@
     <MESSAGE value="Первый коммит" />
     <MESSAGE value="Добавил заполнение сета с текстовыми файлами, отсортированного по имени файла" />
     <MESSAGE value="Вынес поисковик в отдельный класс и добавил вывод результата конкатенации содержимого файлов в результирующий файл" />
-    <option name="LAST_COMMIT_MESSAGE" value="Вынес поисковик в отдельный класс и добавил вывод результата конкатенации содержимого файлов в результирующий файл" />
+    <MESSAGE value="Добавил кодировку и сменил коллекцию внутри визитора на абстрактную" />
+    <MESSAGE value="Добавил обработку исключения, связанного с отсутствием папки с ресурсами" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил обработку исключения, связанного с отсутствием папки с ресурсами" />
   </component>
 </project>
